@@ -1,0 +1,130 @@
+--------------------------- 
+Task run at "Tue 08/27/2024 19:00:00.87" 
+--------------------------- 
+Task run at "Wed 08/28/2024 19:00:08.60" 
+----------------------------------------------------------------------------------------
+/// batch started : Tue 09/03/2024 19:00:00.35 ///
+python app_load_soh_jda completed : Tue 09/03/2024 19:00:08.72
+/// batch completed : Tue 09/03/2024 19:00:08.72
+----------------------------------------------------------------------------------------
+/// batch started : Tue 09/10/2024 19:00:00.48 ///
+python app_load_soh_jda completed : Tue 09/10/2024 19:00:08.51
+python app_load_soh_chg_pwb completed : Tue 09/10/2024 19:15:41.30
+----------------------------------------------------------------------------------------
+/// batch started : Tue 09/17/2024 19:00:00.54 ///
+python app_load_soh_jda completed : Tue 09/17/2024 19:00:08.79
+python app_load_soh_chg_pwb completed : Tue 09/17/2024 19:01:55.61
+----------------------------------------------------------------------------------------
+/// batch started : Tue 09/24/2024 19:00:01.11 ///
+python app_load_soh_jda completed : Tue 09/24/2024 19:00:01.11
+python app_load_soh_chg_pwb completed : Tue 09/24/2024 23:08:18.14
+python app_load_soh_sspwds completed : Tue 09/24/2024 23:35:58.05
+python app_soh_topcare_load completed : Tue 09/24/2024 23:35:58.09
+/// batch completed : Tue 09/24/2024 23:35:58.10
+----------------------------------------------------------------------------------------
+/// batch started : Tue 10/01/2024 19:00:00.28 ///
+python app_load_soh_jda completed : Tue 10/01/2024 19:00:00.28
+python app_load_soh_chg_pwb completed : Tue 10/01/2024 19:06:48.29
+python app_load_soh_sspwds completed : Tue 10/01/2024 21:08:44.09
+python app_soh_topcare_load completed : Tue 10/01/2024 21:08:44.37
+/// batch completed : Tue 10/01/2024 21:08:44.37
+----------------------------------------------------------------------------------------
+/// batch started : Tue 10/08/2024 19:00:00.47 ///
+python app_load_soh_jda completed : Tue 10/08/2024 19:00:08.83
+python app_load_soh_chg_pwb completed : Tue 10/08/2024 19:15:57.23
+----------------------------------------------------------------------------------------
+/// batch started : Tue 10/15/2024 19:00:00.49 ///
+python app_load_soh_jda completed : Tue 10/15/2024 19:00:17.84
+python app_load_soh_chg_pwb completed : Tue 10/15/2024 19:16:25.38
+----------------------------------------------------------------------------------------
+/// batch started : Tue 10/22/2024 19:00:00.55 ///
+python app_load_soh_sspwds completed : Tue 10/22/2024 19:27:50.63
+python app_soh_topcare_load completed : Tue 10/22/2024 19:27:50.68
+python app_load_soh_jda completed : Tue 10/22/2024 19:28:07.70
+python app_load_soh_chg_pwb completed : Tue 10/22/2024 19:43:12.49
+/// batch completed : Tue 10/22/2024 19:43:12.49
+----------------------------------------------------------------------------------------
+/// batch started : Tue 10/29/2024 19:00:00.49 ///
+python app_load_soh_sspwds completed : Tue 10/29/2024 19:07:58.04
+python app_soh_topcare_load completed : Tue 10/29/2024 19:07:58.08
+python app_load_soh_jda completed : Tue 10/29/2024 19:08:15.31
+python app_load_soh_chg_pwb completed : Tue 10/29/2024 19:24:58.56
+/// batch completed : Tue 10/29/2024 19:24:58.56
+----------------------------------------------------------------------------------------
+/// batch started : Tue 11/05/2024 19:00:00.62 ///
+python app_load_soh_sspwds completed : Tue 11/05/2024 19:28:03.72
+python app_soh_topcare_load completed : Tue 11/05/2024 19:28:03.77
+python app_load_soh_jda completed : Tue 11/05/2024 19:28:20.75
+python app_load_soh_chg_pwb completed : Tue 11/05/2024 19:28:43.55
+/// batch completed : Tue 11/05/2024 19:28:43.56
+----------------------------------------------------------------------------------------
+/// batch started : Tue 11/12/2024 19:00:00.41 ///
+python app_load_soh_sspwds completed : Tue 11/12/2024 19:27:52.89
+python app_soh_topcare_load completed : Tue 11/12/2024 19:27:53.15
+python app_load_soh_jda completed : Tue 11/12/2024 19:28:10.38
+python app_load_soh_chg_pwb completed : Tue 11/12/2024 19:36:37.25
+/// batch completed : Tue 11/12/2024 19:36:37.25
+----------------------------------------------------------------------------------------
+/// batch started : Tue 11/19/2024 19:00:00.44 ///
+python app_load_soh_sspwds completed : Tue 11/19/2024 20:56:58.84
+python app_soh_topcare_load completed : Tue 11/19/2024 20:56:59.10
+python app_load_soh_jda completed : Tue 11/19/2024 20:57:16.27
+python app_load_soh_chg_pwb completed : Tue 11/19/2024 21:12:52.66
+/// batch completed : Tue 11/19/2024 21:12:52.66
+----------------------------------------------------------------------------------------
+/// batch started : Tue 11/26/2024 19:00:00.78 ///
+----------------------------------------------------------------------------------------
+/// batch started : Tue 12/03/2024 19:00:00.82 ///
+python app_load_soh_sspwds completed : Tue 12/03/2024 19:27:58.25
+python app_soh_topcare_load completed : Tue 12/03/2024 19:27:58.52
+python app_load_soh_jda completed : Tue 12/03/2024 19:28:15.74
+python app_load_soh_chg_pwb completed : Tue 12/03/2024 19:43:32.76
+/// batch completed : Tue 12/03/2024 19:43:32.77
+----------------------------------------------------------------------------------------
+/// batch started : Tue 12/10/2024 19:00:00.66 ///
+python app_load_soh_sspwds completed : Tue 12/10/2024 19:11:57.11
+python app_soh_topcare_load completed : Tue 12/10/2024 19:11:57.16
+python app_load_soh_jda completed : Tue 12/10/2024 19:12:14.18
+python app_load_soh_chg_pwb completed : Tue 12/10/2024 19:28:55.41
+/// batch completed : Tue 12/10/2024 19:28:55.42
+----------------------------------------------------------------------------------------
+/// batch started : Tue 12/17/2024 19:00:00.32 ///
+python app_load_soh_sspwds completed : Tue 12/17/2024 19:12:27.39
+python app_soh_topcare_load completed : Tue 12/17/2024 19:12:27.47
+python app_load_soh_jda completed : Tue 12/17/2024 19:12:44.76
+python app_load_soh_chg_pwb completed : Tue 12/17/2024 19:28:22.52
+/// batch completed : Tue 12/17/2024 19:28:22.53
+----------------------------------------------------------------------------------------
+/// batch started : Tue 12/24/2024 19:00:00.64 ///
+python app_load_soh_sspwds completed : Tue 12/24/2024 19:11:57.85
+python app_soh_topcare_load completed : Tue 12/24/2024 19:11:57.93
+python app_load_soh_jda completed : Tue 12/24/2024 19:12:15.28
+python app_load_soh_chg_pwb completed : Tue 12/24/2024 19:28:53.62
+/// batch completed : Tue 12/24/2024 19:28:53.62
+----------------------------------------------------------------------------------------
+/// batch started : Tue 12/31/2024 19:00:00.65 ///
+python app_load_soh_sspwds completed : Tue 12/31/2024 19:28:29.49
+python app_soh_topcare_load completed : Tue 12/31/2024 19:28:29.59
+python app_load_soh_jda completed : Tue 12/31/2024 19:28:46.97
+python app_load_soh_chg_pwb completed : Tue 12/31/2024 19:45:32.11
+/// batch completed : Tue 12/31/2024 19:45:32.12
+----------------------------------------------------------------------------------------
+/// batch started : Tue 01/07/2025 19:00:01.35 ///
+python app_load_soh_sspwds completed : Tue 01/07/2025 19:00:12.78
+python app_soh_topcare_load completed : Tue 01/07/2025 19:00:12.84
+python app_load_soh_jda completed : Tue 01/07/2025 19:00:18.33
+python app_load_soh_chg_pwb completed : Tue 01/07/2025 19:17:40.31
+/// batch completed : Tue 01/07/2025 19:17:40.31
+----------------------------------------------------------------------------------------
+/// batch started : Tue 01/14/2025 19:00:00.44 ///
+python app_load_soh_sspwds completed : Tue 01/14/2025 19:21:38.23
+python app_soh_topcare_load completed : Tue 01/14/2025 19:21:38.32
+python app_load_soh_jda completed : Tue 01/14/2025 19:21:55.79
+python app_load_soh_chg_pwb completed : Tue 01/14/2025 19:32:11.86
+/// batch completed : Tue 01/14/2025 19:32:11.87
+----------------------------------------------------------------------------------------
+/// batch started : Tue 01/21/2025 19:00:01.03 ///
+python app_load_soh_chg_pwb completed : Tue 01/21/2025 19:00:01.33
+python app_load_soh_sspwds completed : Tue 01/21/2025 19:00:01.39
+python app_load_soh_jda completed : Tue 01/21/2025 19:00:01.40
+/// batch completed : Tue 01/21/2025 19:00:01.40
