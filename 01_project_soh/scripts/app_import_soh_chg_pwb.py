@@ -45,7 +45,8 @@ for params in parameter_sets:
 
     #Filter rows that are only in the Excel file (not in the database)
     filtered_df = merged_df[merged_df['_merge'] == 'left_only']
-
+    # Drop unnecessary columns from the merged DataFrame
+    filtered_df = filtered_df.drop(columns=['stcode', 'DATE','_merge'])
     print(filtered_df)
     
     # Output the filtered DataFrame to a CSV file

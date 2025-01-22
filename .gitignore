@@ -3,3 +3,6 @@
 02_project_checklist/configs/
 03_project_missrate/configs/
 04_project_stocktake/configs/
+configs/
+autobot_ticket.py
+mouse position detect.py

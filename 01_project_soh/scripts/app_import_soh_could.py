@@ -47,7 +47,7 @@ filtered_df2.columns = new_column_names
 print(filtered_df2)
 
 # Output the filtered DataFrame to a CSV file
-output_csv = r'C:\11_Python\log\last_update_soh.csv'
+output_csv = r'C:\11_Python\01_project_soh\log\last_update_soh.csv'
 filtered_df2.to_csv(output_csv, index=False)
 
 # Print completion message

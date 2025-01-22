@@ -40,7 +40,7 @@ def wait_for_file_download(file_path, timeout=600, check_interval=5):
 
 
 # List of parameter sets
-parameter_sets = [CHG,PWB] #
+parameter_sets = [CHG,PWB] #CHG,
 # Define the file path
 for params in parameter_sets:
 
