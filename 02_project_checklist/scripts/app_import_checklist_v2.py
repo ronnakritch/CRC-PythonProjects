@@ -1,8 +1,15 @@
 import pandas as pd
 from datetime import datetime, timedelta
-from configs.checklist_parameter import SSP, OFM, PWB, B2S, CFR
 from sqlalchemy import create_engine, text
 import csv
+
+import sys
+import os
+# Dynamically add the project root to the module search path
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+project_root = os.path.abspath(os.path.join(script_dir, ".."))  # One level up (project root)
+sys.path.append(project_root)  # Add project root to sys.path
+from configs.checklist_parameter import SSP, OFM, PWB, B2S, CFR
 
 # SQL and Log Configuration
 log_table = "log_checklist"
