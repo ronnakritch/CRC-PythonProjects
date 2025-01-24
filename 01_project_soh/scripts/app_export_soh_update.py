@@ -1,6 +1,20 @@
 import pandas as pd
 from sqlalchemy import create_engine,text
 from datetime import datetime, timezone, timedelta
+import sys
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+print(f"script_dir: {script_dir}")
+# Public config directory (two levels up)
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",))
+sys.path.append(public_config_dir)
+try:
+    from public_configs.paramter_sql import local_db1
+except ModuleNotFoundError as e:
+    print(f"Error: {e}")
+    print(f"public_config_dir: {public_config_dir}")
+    raise
+
 
 # Output CSV file path
 output_file_path = r'D:\Users\chironnakrit\Central Group\PST Performance Team - Documents\Apps\soh_update_raw.csv'
@@ -8,7 +22,7 @@ output_file_path = r'D:\Users\chironnakrit\Central Group\PST Performance Team - 
 # Define the target SQL table name
 source_table = 'soh_update_v2'
 # Database connection string
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@AUDCRCHA0020015/pstdb2'
+db_url = local_db1['conn']
 # Create the engine to connect to PostgreSQL
 engine = create_engine(db_url)
     

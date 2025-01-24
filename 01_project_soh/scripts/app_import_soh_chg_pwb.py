@@ -3,18 +3,22 @@ from sqlalchemy import create_engine, text
 
 import sys
 import os
-# Dynamically add the project root to the module search path
 script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
-project_root = os.path.abspath(os.path.join(script_dir, ".."))  # One level up (project root)
-sys.path.append(project_root)  # Add project root to sys.path
+# Project root (one level up)
+project_root = os.path.abspath(os.path.join(script_dir, ".."))
+# Public config directory (two levels up)
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",))
+sys.path.append(project_root)
+sys.path.append(public_config_dir)
 
+from public_configs.paramter_sql import cloud_db1,local_db1
 from configs.parameter_soh_chg_pwb import CHG_parameter, PWB_parameter
 
 # Define the target SQL
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@AUDCRCHA0020015/pstdb2'
+db_url = local_db1['conn']
 engine = create_engine(db_url)
 
-db_url2 = 'postgresql+psycopg2://chironnakrit:20309925@103.22.182.82/pstdb'
+db_url2 = cloud_db1['conn']
 engine2 = create_engine(db_url2)
 
 # List of parameter sets

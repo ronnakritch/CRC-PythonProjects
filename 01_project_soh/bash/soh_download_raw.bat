@@ -13,8 +13,10 @@ echo python app_load_soh_chg_pwb completed : %date% %time%>> %LOG_FILE%
 python app_load_soh_sspwds.py
 echo python app_load_soh_sspwds completed : %date% %time%>> %LOG_FILE%
 
+python app_load_soh_pwb_ussmerch.py
+echo python app_load_soh_sspwds completed : %date% %time%>> %LOG_FILE%
+
 echo python app_load_soh_jda.py
 echo python app_load_soh_jda completed : %date% %time%>> %LOG_FILE%
-
 
 echo /// batch completed : %date% %time%>> %LOG_FILE% ///

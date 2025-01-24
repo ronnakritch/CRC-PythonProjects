@@ -15,6 +15,9 @@ echo app_import_soh_chg_pwb completed : %date% %time%>> %LOG_FILE%
 python app_import_soh_sspwds.py
 echo app_import_soh_sspwds completed : %date% %time%>> %LOG_FILE%
 
+python app_import_soh_pwb_ussm.py
+echo app_import_soh_pwb_ussm completed : %date% %time%>> %LOG_FILE%
+
 python app_export_soh_update.py
 echo app_export_soh_update completed : %date% %time%>> %LOG_FILE%
 

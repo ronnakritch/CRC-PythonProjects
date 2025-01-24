@@ -1,10 +1,22 @@
 import pandas as pd
 from sqlalchemy import create_engine, text
 
-# Define the target SQL table name
+import sys
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+# Project root (one level up)
+project_root = os.path.abspath(os.path.join(script_dir, ".."))
+# Public config directory (two levels up)
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", ".."))
+sys.path.append(project_root)
+sys.path.append(public_config_dir)
+
+
+from public_configs.paramter_sql import cloud_db1
+
 target_table = 'checklist'
 source_view = 'temp_check_report_summary'
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@103.22.182.82:5432/pstdb'
+db_url = cloud_db1['conn']
 engine = create_engine(db_url)
 
 file_path = r"D:\Users\chironnakrit\Desktop\temp_check_report_summary_202412261622.csv"

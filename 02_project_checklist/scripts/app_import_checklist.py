@@ -2,10 +2,16 @@ import pandas as pd
 from datetime import datetime, timedelta
 from configs.checklist_parameter import SSP, OFM, PWB, B2S, CFR
 from sqlalchemy import create_engine, text
-
+import sys
+import os
+# Dynamically add the project root to the module search path
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",)) # Two level up 
+sys.path.append(public_config_dir)
+from public_configs.paramter_sql import cloud_db1
 # Define the target SQL table name
 target_table = 'checklist'
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@103.22.182.82:5432/pstdb'
+db_url = cloud_db1['conn']
 engine = create_engine(db_url)
 
 # Step 1: Read the Excel file and select the SSP sheet, columns A:AN

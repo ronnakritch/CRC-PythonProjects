@@ -9,11 +9,14 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
 project_root = os.path.abspath(os.path.join(script_dir, ".."))  # One level up (project root)
 sys.path.append(project_root)  # Add project root to sys.path
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",)) # Two level up 
+sys.path.append(public_config_dir)
+from public_configs.paramter_sql import cloud_db1
 from configs.checklist_parameter import SSP, OFM, PWB, B2S, CFR
 
 # SQL and Log Configuration
 log_table = "log_checklist"
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@103.22.182.82:5432/pstdb'
+db_url = cloud_db1['conn']
 engine = create_engine(db_url)
 
 def log_to_sql(start_time, end_time, duration, bu, stcode_count, record_count, status, no_count, error_message=""):

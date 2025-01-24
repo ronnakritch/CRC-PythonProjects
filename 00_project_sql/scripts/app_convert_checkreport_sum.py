@@ -1,8 +1,18 @@
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker
 
-# Assuming you have already created an engine
-engine = create_engine('postgresql+psycopg2://chironnakrit:20309925@103.22.182.82:5432/pstdb')
+import sys
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+# Project root (one level up)
+project_root = os.path.abspath(os.path.join(script_dir, ".."))
+# Public config directory (two levels up)
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", ".."))
+sys.path.append(project_root)
+sys.path.append(public_config_dir)
+
+from public_configs.paramter_sql import cloud_db1
+engine = create_engine(cloud_db1['conn'])
 
 # Create a session
 Session = sessionmaker(bind=engine)
@@ -29,6 +39,7 @@ DELETE FROM check_report_summary
 session.execute(delete_query)
 
 # Insert all the fetched data into the table
+table = 'check_report_summary'
 filtered_df1.to_sql(table, engine, if_exists='append', index=False)
 
 # Commit the transaction

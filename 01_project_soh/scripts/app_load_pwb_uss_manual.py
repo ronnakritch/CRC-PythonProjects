@@ -1,6 +1,5 @@
 import pyautogui
 import time
-import subprocess
 
 def wait_for_color_change(initial_color, desired_color, position, sequence):
     while True:
@@ -15,65 +14,70 @@ def wait_for_color_change(initial_color, desired_color, position, sequence):
             print(f"Color has changed from {initial_color}, but not to {desired_color}. Current color: {current_color}")
         else:
             print(f"Waiting... Current color: {current_color}")
-        time.sleep(5)  # Add a small delay to reduce CPU usage
+        time.sleep(5)  
 
-def perform_actions(sequence):
-
+def perform_actions():
     pyautogui.press('tab')
     pyautogui.press('tab')
     pyautogui.press('enter')
-    pyautogui.press('tab')
-    pyautogui.write(str(sequence).zfill(3))
+    time.sleep(10)
+    pyautogui.press('tab') #step1
+    pyautogui.press('tab') #step2
+    pyautogui.press('tab') #step3
+    pyautogui.press('tab') #step4
+    pyautogui.press('tab') #step5
+    pyautogui.press('tab') #step6
+    pyautogui.press('tab') #step7
+    pyautogui.press('tab') #step8
+    pyautogui.press('tab') #step9
+    pyautogui.press('tab') #step10
+    pyautogui.press('down') #select down to dropdown
+    pyautogui.press('down') #select 1st outlet
     pyautogui.press('enter')
-    pyautogui.hotkey('alt', 'e')
+    pyautogui.press('tab') #step1
+    pyautogui.press('tab') #step2
+    pyautogui.press('tab') #step3
+    pyautogui.press('tab') #step4
+    pyautogui.press('tab') #step5
+    pyautogui.press('tab') #step6
+    pyautogui.press('tab') #step7
+    pyautogui.press('tab') #step8
+    pyautogui.press('tab') #step9
+    pyautogui.hotkey('ctrl', 'c') #copy branch name
+    pyautogui.hotkey('alt', 'e') #export
+    time.sleep(2)
+    pyautogui.hotkey('ctrl', 'v') #paste branch name to save as file
+    pyautogui.press('enter')
     time.sleep(1)
-    pyautogui.write(str(sequence).zfill(3))
-    
-    pyautogui.press('enter')
-    time.sleep(1)
 
-upfront_path = r"C:\Program Files (x86)\Upfront\USSWDS\USSWDS.exe"
-subprocess.Popen(upfront_path, shell=True)
-time.sleep(10)
-#login
+time.sleep(15)
+pyautogui.press('down') #select down to dropdown
+pyautogui.press('down') #select 1st outlet
 pyautogui.press('enter')
-pyautogui.press('enter')
-pyautogui.press('enter')
-#outlet menu select
-time.sleep(5)
-pyautogui.hotkey('alt', '5')
-pyautogui.press('5')
-
-time.sleep(10)
-pyautogui.press('down')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.press('tab')
-pyautogui.press('tab')
-pyautogui.press('tab')
-pyautogui.press('tab')
-pyautogui.press('tab')
-pyautogui.press('tab')
-pyautogui.press('tab')
-pyautogui.press('down')
-pyautogui.press('down')
-pyautogui.press('down')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.hotkey('alt', 'e')
+pyautogui.press('tab') #step1
+pyautogui.press('tab') #step2
+pyautogui.press('tab') #step3
+pyautogui.press('tab') #step4
+pyautogui.press('tab') #step5
+pyautogui.press('tab') #step6
+pyautogui.press('tab') #step7
+pyautogui.press('tab') #step8
+pyautogui.press('tab') #step9
+pyautogui.hotkey('ctrl', 'c') #copy branch name
+pyautogui.hotkey('alt', 'e') #export
 time.sleep(2)
-pyautogui.write('001') #1st sequence
+pyautogui.hotkey('ctrl', 'v') #paste branch name to save as file
 pyautogui.press('enter')
 time.sleep(2)
 
 # Define the initial color, desired color, and position
 initial_color = (255, 0, 0) #red
-desired_color = (171, 171, 171) #gray
-position = (800, 200) #position color load tab
+desired_color = (244, 244, 244) #gray
+position = (900, 200) #position color load tab
 
 # Loop over sequences from 2 to 36
-for i in range(2, 37):
-    wait_for_color_change(initial_color, desired_color, position, sequence=i)
+for i in range(2, 410):
+    wait_for_color_change(initial_color, desired_color, position,)
 
 #close upfront
 pyautogui.hotkey('alt', 'f4')
@@ -107,5 +111,3 @@ params = {
 }
 
 copy_all_files(params)
-
-    

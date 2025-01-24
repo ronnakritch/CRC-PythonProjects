@@ -1,9 +1,18 @@
 import pandas as pd
 from sqlalchemy import create_engine, text
 
+import sys
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+# Public config directory (two levels up)
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",))
+sys.path.append(public_config_dir)
+
+from public_configs.paramter_sql import cloud_db1
+
 # Define the target SQL table name
 target_table = 'soh_update'
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@103.22.182.82:5432/pstdb'
+db_url = cloud_db1['conn']
 engine = create_engine(db_url)
 
 csv_file_path = r'D:\Users\chironnakrit\Central Group\PST Performance Team - Documents\Apps\soh_update_raw.csv'

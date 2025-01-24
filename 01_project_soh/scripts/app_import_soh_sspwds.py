@@ -1,15 +1,21 @@
 import os
 import pandas as pd
 from sqlalchemy import create_engine
-
+import sys
+import os
+# Dynamically add the project root to the module search path
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",)) # Two level up 
+sys.path.append(public_config_dir)
+from public_configs.paramter_sql import local_db1
 # Specify the folder containing the Excel files
-folder_path = r'D:\Users\chironnakrit\OneDrive - Central Group\เดสก์ท็อป\Works\06_RAW_FILE\SOH\SSPWDS\\'
+folder_path = r'C:\11_Python\01_project_soh\data\input\SSPWDS\\'
 
 # List all Excel files in the folder
 excel_files = [f for f in os.listdir(folder_path) if f.endswith('.xls')]
 
 # Database connection details
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@AUDCRCHA0020015/pstdb2'
+db_url = local_db1['conn']
 engine = create_engine(db_url)
 
 # Query existing records from the database

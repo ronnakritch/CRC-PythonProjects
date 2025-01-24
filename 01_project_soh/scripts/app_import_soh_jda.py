@@ -7,13 +7,16 @@ import sys
 import os
 # Dynamically add the project root to the module search path
 script_dir = os.path.dirname(os.path.abspath(__file__))  # Current script directory
-project_root = os.path.abspath(os.path.join(script_dir, ".."))  # One level up (project root)
+project_root = os.path.abspath(os.path.join(script_dir, ".."))  # One level up
+public_config_dir = os.path.abspath(os.path.join(script_dir, "..", "..",)) # Two level up 
 sys.path.append(project_root)  # Add project root to sys.path
+sys.path.append(public_config_dir)
 
+from public_configs.paramter_sql import local_db1
 from configs.parameter_soh_jda import OFM_parameter, B2S_parameter, SSP_parameter
 
 # Define the target SQL table name
-db_url = 'postgresql+psycopg2://chironnakrit:20309925@AUDCRCHA0020015/pstdb2' 
+db_url = local_db1['conn']
 engine = create_engine(db_url)
 
 # List of parameter sets
