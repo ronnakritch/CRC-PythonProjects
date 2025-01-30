@@ -77,7 +77,7 @@ position = (900, 200) #position color load tab
 
 # Loop over sequences from 2 to 36
 for i in range(2, 410):
-    wait_for_color_change(initial_color, desired_color, position,)
+    wait_for_color_change(initial_color, desired_color, position,i)
 
 #close upfront
 pyautogui.hotkey('alt', 'f4')

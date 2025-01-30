@@ -21,8 +21,14 @@ echo app_import_soh_pwb_ussm completed : %date% %time%>> %LOG_FILE%
 python app_export_soh_update.py
 echo app_export_soh_update completed : %date% %time%>> %LOG_FILE%
 
-python app_import_soh_could.py
-echo app_import_soh_could completed : %date% %time%>> %LOG_FILE%
+python app_export_soh_update_pwb.py
+echo app_export_soh_update_pwb completed : %date% %time%>> %LOG_FILE%
+
+python app_could_import_soh.py
+echo app_could_import_soh completed : %date% %time%>> %LOG_FILE%
+
+python app_could_import_soh_pwb_3q.py
+echo app_could_import_soh_pwb_3q completed : %date% %time%>> %LOG_FILE%
 
 echo /// batch completed : %date% %time%>> %LOG_FILE% ///
 

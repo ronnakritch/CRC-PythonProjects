@@ -5,6 +5,6 @@
 03_project_missrate/configs/
 04_project_stocktake/configs/
 public_configs/
-sample_folder/
+sample_folder
 autobot_ticket.py
 mouse position detect.py

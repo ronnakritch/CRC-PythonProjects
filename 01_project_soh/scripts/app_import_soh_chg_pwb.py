@@ -22,7 +22,7 @@ db_url2 = cloud_db1['conn']
 engine2 = create_engine(db_url2)
 
 # List of parameter sets
-parameter_sets = [PWB_parameter, CHG_parameter]
+parameter_sets = [CHG_parameter] #PWB_parameter, 
 
 for params in parameter_sets:
 

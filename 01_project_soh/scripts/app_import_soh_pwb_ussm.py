@@ -61,7 +61,7 @@ df1.columns = df1.columns.str.lower()
 df1 = df1[df1['quant'] != 0]   
 
 #change format type
-df1['stmerch'] = df1['stmerch'].astype(str).str.zfill(5)
+df1['stmerch'] = df1['stmerch'].astype(str)
 df1['asdate'] = df1['asdate'].astype(str)
 
 # Remove rows already in the database
