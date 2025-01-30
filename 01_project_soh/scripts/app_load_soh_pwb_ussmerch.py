@@ -38,7 +38,7 @@ def perform_actions(sequence):
     pyautogui.press('enter')
     time.sleep(1)
 
-"""
+
 upfront_path = r"C:\Program Files (x86)\Upfront\USSMerchPWB\USSMerchPWB.exe"
 subprocess.Popen(upfront_path, shell=True)
 time.sleep(10)
@@ -46,7 +46,7 @@ time.sleep(10)
 pyautogui.write(PWB['pass']) 
 pyautogui.press('tab')
 pyautogui.press('enter')
-"""
+
 #outlet menu select
 time.sleep(10)
 pyautogui.hotkey('alt', 'B') #รายงาน
@@ -85,7 +85,7 @@ position = (900, 200) #position color load tab
 # Loop over sequences from 2 to 36
 for i in range(2, 4):
     wait_for_color_change(initial_color, desired_color, position, sequence=i)
-"""
+
 #close upfront
 pyautogui.hotkey('alt', 'f4')
 pyautogui.hotkey('alt', 'f4')
@@ -118,4 +118,3 @@ params = {
 }
 
 copy_all_files(params)
-"""
